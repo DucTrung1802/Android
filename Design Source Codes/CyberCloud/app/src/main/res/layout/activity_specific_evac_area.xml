@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="specificEvacAreaVM" type="com.application.app.modules.specificevacarea.data.viewmodel.SpecificEvacAreaVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup343"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameGroup360"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageBG"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_bg_2}" tools:src="@drawable/img_bg_2"/>
+            <FrameLayout android:id="@+id/frameGroup367"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_237pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_354pxh">
+                <ImageView android:id="@+id/imageLabangon1"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_237pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_labangon1}" tools:src="@drawable/img_labangon1"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageArrow1"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_32pxv"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_arrow1"/>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearGroup353"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_903">
+                <EditText android:ellipsize="end"
+                    android:hint="@string/msg_labangon_barang"
+                    android:id="@+id/etLabangonBarang"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_259pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_23pxv"
+                    android:paddingStart="@dimen/_8pxh"
+                    android:paddingTop="@dimen/_1pxv"
+                    android:singleLine="true"
+                    android:text="@={specificEvacAreaVM.specificEvacAreaModel.etLabangonBarangValue}"
+                    android:textColorHint="@color/cyan_50" style="@style/etOpenSansromanbold20"/>
+                <LinearLayout android:id="@+id/linearGroup348"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameGroup362"
+                        android:layout_height="@dimen/_64pxv"
+                        android:layout_marginStart="@dimen/_29pxh" android:layout_width="@dimen/_76pxh">
+                        <TextView android:id="@+id/txtDirection"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtDirection}"
+                            style="@style/txtOpenSansromanregular15" tools:text="@string/lbl_direction"/>
+                        <ImageView android:id="@+id/imageDirection"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_41pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_width="@dimen/_41pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_direction"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearGroup363"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_weight="0.33"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageTelephone2"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_36pxh"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_telephone2_1"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtCall"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtCall}"
+                            style="@style/txtOpenSansromanregular15" tools:text="@string/lbl_call"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearSave"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_28pxh"
+                        android:layout_marginStart="@dimen/_36pxh"
+                        android:layout_weight="0.33"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageSaveinstagram"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_marginEnd="@dimen/_22pxh"
+                            android:layout_marginStart="@dimen/_22pxh"
+                            android:layout_width="@dimen/_32pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_saveinstagram"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtSave"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtSave}"
+                            style="@style/txtOpenSansromanregular15" tools:text="@string/lbl_save"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/indigo_800"
+                    android:id="@+id/lineLine61"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_328pxh"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearLocation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageLocation12"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_width="@dimen/_36pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_location12"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBrngyPuntaPr"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.87"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtBrngyPuntaPr}"
+                        style="@style/txtOpenSansromanregular18_1" tools:text="@string/msg_brngy_punta_pr"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearNumber"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_41pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageTelephone1"
+                        android:layout_height="@dimen/_41pxh"
+                        android:layout_width="@dimen/_45pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_telephone1_1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt03234525432"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.84"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{specificEvacAreaVM.specificEvacAreaModel.txt03234525432}"
+                        style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_032_3452_5432"/>
+                </LinearLayout>
+                <View android:background="@color/indigo_800"
+                    android:id="@+id/lineLine62"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_142pxv" android:layout_width="@dimen/_328pxh"/>
+                <LinearLayout android:id="@+id/linearGroup347"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtQuestionsAndA"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25pxh"
+                        android:layout_marginStart="@dimen/_25pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtQuestionsAndA}"
+                        style="@style/txtOpenSansromanbold15_1" tools:text="@string/msg_questions_and_a"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearGroup346"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameGroup365"
+                            android:layout_height="@dimen/_37pxv"
+                            android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_37pxh">
+                            <ImageView android:id="@+id/imageEllipse4"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_37pxh"
+                                android:layout_width="@dimen/_37pxh"
+                                android:scaleType="fitXY"
+                                circular="@{true}"
+                                imageRes="@{@drawable/img_ellipse4}" tools:src="@drawable/img_ellipse4"/>
+                            <ImageView android:id="@+id/imageUser"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_26pxh"
+                                android:layout_marginHorizontal="@dimen/_5pxh"
+                                android:layout_marginVertical="@dimen/_5pxv"
+                                android:layout_width="@dimen/_26pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_user_1"/>
+                        </FrameLayout>
+                        <TextView android:id="@+id/txtAskTheCommuni"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_28pxh"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_weight="0.87"
+                            android:layout_width="0dp"
+                            android:paddingBottom="@dimen/_7pxv"
+                            android:paddingStart="@dimen/_15pxh"
+                            android:paddingTop="@dimen/_4pxv"
+                            android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtAskTheCommuni}"
+                            style="@style/txtSolidRoundedOutline" tools:text="@string/msg_ask_the_communi"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSeeQuestions"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25pxh"
+                        android:layout_marginStart="@dimen/_25pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{specificEvacAreaVM.specificEvacAreaModel.txtSeeQuestions}"
+                        style="@style/txtOpenSansromanregular13" tools:text="@string/msg_see_questions"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

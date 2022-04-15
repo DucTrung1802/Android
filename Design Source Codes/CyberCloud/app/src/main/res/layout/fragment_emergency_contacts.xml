@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="emergencyContactsVM" type="com.application.app.modules.emergencycontacts.data.viewmodel.EmergencyContactsVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearGroup325"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <View
+                android:background="@drawable/rectangle_bg_cyan_50_7f_radius_5"
+                android:id="@+id/viewRectangle56"
+                android:layout_height="@dimen/_52pxh"
+                android:layout_marginBottom="@dimen/_523pxv" android:layout_width="@dimen/_6pxh"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearContacts"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_weight="0.98" android:layout_width="0dp" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearGroup316"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylebluegray_2">
+                    <TextView android:id="@+id/txtHOSPITAL0321"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp"
+                        android:text="@{emergencyContactsVM.emergencyContactsModel.txtHOSPITAL0321}"
+                        style="@style/txtOpenSansromanbold25" tools:text="@string/msg_hospital_032_1"/>
+                    <LinearLayout android:id="@+id/linearGroup337"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_36pxv"
+                        android:layout_marginEnd="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_91pxh"
+                        android:layout_marginTop="@dimen/_34pxv"
+                        android:layout_weight="0.4"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageLetter1"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_width="@dimen/_35pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_letter1"/>
+                        <ImageView android:id="@+id/imageTelephone1"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_marginStart="@dimen/_15pxh"
+                            android:layout_width="@dimen/_35pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_telephone1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerEmergencyContacts"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_15pxh}" tools:itemCount="4" tools:listitem="@layout/row_emergency_contacts1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

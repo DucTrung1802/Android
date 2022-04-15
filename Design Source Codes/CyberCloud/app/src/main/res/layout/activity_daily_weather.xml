@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dailyWeatherVM" type="com.application.app.modules.dailyweather.data.viewmodel.DailyWeatherVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearGroup927"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearRectangle15"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_600_20">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearGroup884"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_26pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_31pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_menu_1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtWeather"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_39pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{dailyWeatherVM.dailyWeatherModel.txtWeather}"
+                        style="@style/txtOpenSansromanbold28" tools:text="@string/lbl_weather"/>
+                    <ImageView android:id="@+id/imageSearch"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_search_1"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup914"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearGroup915"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMarch"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_23pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.36"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{dailyWeatherVM.dailyWeatherModel.txtMarch}"
+                        style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_march"/>
+                    <FrameLayout android:id="@+id/frameGroup917"
+                        android:layout_height="@dimen/_24pxv"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_124pxh" android:layout_width="@dimen/_140pxh">
+                        <FrameLayout android:id="@+id/frameGroup919"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_24pxv" android:layout_width="@dimen/_140pxh">
+                            <ImageView android:clickable="true"
+                                android:id="@+id/imageSignin"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_width="@dimen/_91pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_signin_4"/>
+                            <ImageView android:id="@+id/imageSignin1"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_24pxh"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_width="@dimen/_69pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_signin_5"/>
+                        </FrameLayout>
+                        <LinearLayout android:id="@+id/linearGroup886"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtBYDAY"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{dailyWeatherVM.dailyWeatherModel.txtBYDAY}"
+                                style="@style/txtOpenSansromanregular10_1" tools:text="@string/lbl_by_day"/>
+                            <TextView android:clickable="true"
+                                android:ellipsize="end"
+                                android:id="@+id/txtBYMONTH"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12pxh"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{dailyWeatherVM.dailyWeatherModel.txtBYMONTH}"
+                                style="@style/txtOpenSansromanregular10" tools:text="@string/lbl_by_month"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameGroup921"
+                    android:layout_height="@dimen/_710pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_372pxh">
+                    <LinearLayout android:id="@+id/linearGroup908"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="start"
+                            android:id="@+id/recyclerDailyWeather"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_13pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_daily_weather1"/>
+                        <LinearLayout android:gravity="end"
+                            android:id="@+id/linearGroup903"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylebluegray_5">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txt32"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_60pxv"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginTop="@dimen/_21pxv"
+                                android:layout_weight="0.33"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{dailyWeatherVM.dailyWeatherModel.txt32}"
+                                style="@style/txtOpenSansromanbold64" tools:text="@string/lbl_32"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txt"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_90pxv"
+                                android:layout_marginTop="@dimen/_25pxv"
+                                android:layout_weight="0.07"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{dailyWeatherVM.dailyWeatherModel.txt}"
+                                style="@style/txtOpenSansromanregular32" tools:text="@string/lbl"/>
+                            <ImageView android:id="@+id/imageCloudy4"
+                                android:layout_height="@dimen/_71pxh"
+                                android:layout_marginBottom="@dimen/_25pxv"
+                                android:layout_marginStart="@dimen/_34pxh"
+                                android:layout_marginTop="@dimen/_26pxv"
+                                android:layout_width="@dimen/_71pxh"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_cloudy3}" tools:src="@drawable/img_cloudy3"/>
+                            <LinearLayout android:gravity="end"
+                                android:id="@+id/linearGroup904"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_33pxv"
+                                android:layout_marginEnd="@dimen/_14pxh"
+                                android:layout_marginStart="@dimen/_45pxh"
+                                android:layout_marginTop="@dimen/_29pxv"
+                                android:layout_weight="0.31"
+                                android:layout_width="0dp" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:id="@+id/txt02"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{dailyWeatherVM.dailyWeatherModel.txt02}"
+                                    style="@style/txtOpenSansromanbold48" tools:text="@string/lbl_02"/>
+                                <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtMON"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_4pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{dailyWeatherVM.dailyWeatherModel.txtMON}"
+                                    style="@style/txtOpenSansromanbold24" tools:text="@string/lbl_mon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameGroup923"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_24pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_69pxh">
+                        <ImageView android:id="@+id/imageThemedark"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_24pxh"
+                            android:layout_width="@dimen/_69pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_themedark_4"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtHistory"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_7pxv"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_14pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{dailyWeatherVM.dailyWeatherModel.txtHistory}"
+                            style="@style/txtOpenSansromanregular11" tools:text="@string/lbl_history"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearRectangle3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_904">
+            <LinearLayout android:id="@+id/linearGroup924"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_52pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageHut1"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_22pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_hut1"/>
+                <ImageView android:id="@+id/imageCalendar11"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_calendar11"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageWaterlevel"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_width="@dimen/_45pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_floods21"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageRadar"
+                    android:layout_height="@dimen/_39pxh"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_39pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_radar"/>
+                <ImageView android:id="@+id/imageEmergencycall"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_emergencycall_1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

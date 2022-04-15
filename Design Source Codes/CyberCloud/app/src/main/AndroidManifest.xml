@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.application.app.modules.landingpage1.ui.LandingPage1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.groundwaterlevel.ui.GroundWaterLevelActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.radar.ui.RadarActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.contactus.ui.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.userprofile.ui.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.splashscreen1.ui.SplashScreen1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.aboutus1.ui.AboutUs1Activity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.application.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.landingpage.ui.LandingPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.signup2.ui.SignUp2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.monthlyweather.ui.MonthlyWeatherActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.aboutus.ui.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.dailyweathernext.ui.DailyWeatherNextActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.dailyweather.ui.DailyWeatherActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.radar1.ui.Radar1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.dailyweatherprevious.ui.DailyWeatherPreviousActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.contactus1.ui.ContactUs1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.emergencycontacts2.ui.EmergencyContacts2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.specificevacarea.ui.SpecificEvacAreaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.signin1.ui.SignIn1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.settings1.ui.Settings1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.evacuationareas.ui.EvacuationAreasActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.tips1.ui.Tips1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.userprofile3.ui.UserProfile3Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.tips.ui.TipsActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

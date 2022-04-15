@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="historyWeather1RowModel" type="com.application.app.modules.historyweather.data.model.HistoryWeather1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTodaysForecas"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.58" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{historyWeather1RowModel.txtTodaysForecas}"
+            style="@style/txtOpenSansromanregular17" tools:text="@string/msg_today_s_forecas"/>
+        <LinearLayout android:id="@+id/linearGroup779"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_84pxh"
+            android:layout_weight="0.42" android:layout_width="0dp" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txt30"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{historyWeather1RowModel.txt30}"
+                style="@style/txtOpenSansromanbold28" tools:text="@string/lbl_302"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.08" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{historyWeather1RowModel.txt}"
+                style="@style/txtOpenSansromanregular20" tools:text="@string/lbl"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt27"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_weight="0.4" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{historyWeather1RowModel.txt27}"
+                style="@style/txtOpenSansromanbold28" tools:text="@string/lbl_273"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.11" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{historyWeather1RowModel.txt1}"
+                style="@style/txtOpenSansromanregular20" tools:text="@string/lbl"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

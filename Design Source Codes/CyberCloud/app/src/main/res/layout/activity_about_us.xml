@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUsVM" type="com.application.app.modules.aboutus.data.viewmodel.AboutUsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup145"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup135"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameGroup141"
+                    android:layout_height="@dimen/_90pxv" android:layout_width="match_parent">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageArrow1"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginHorizontal="@dimen/_26pxh"
+                        android:layout_marginVertical="@dimen/_26pxv"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_arrow1"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnAboutUs"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_about_us"
+                        android:textAllCaps="false"
+                        style="@style/btnSolid" tools:text="@string/lbl_about_us"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameGroup143"
+                    android:layout_height="@dimen/_216pxv" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearGroup136"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylebluegray_901">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtWhoAreWe"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_9pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{aboutUsVM.aboutUsModel.txtWhoAreWe}"
+                            style="@style/txtOpenSansromanbold20" tools:text="@string/lbl_who_are_we"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtCyberCloudApp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20pxv"
+                            android:layout_marginEnd="@dimen/_17pxh"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_marginTop="@dimen/_19pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{aboutUsVM.aboutUsModel.txtCyberCloudApp}"
+                            style="@style/txtOpenSansromanregular15" tools:text="@string/msg_cybercloud_app"/>
+                    </LinearLayout>
+                    <View
+                        android:background="@drawable/rectangle_bg_cyan_50_7f_radius_5"
+                        android:id="@+id/viewRectangle56"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_52pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_6pxh"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup138"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylebluegray_901">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMission"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{aboutUsVM.aboutUsModel.txtMission}"
+                        style="@style/txtOpenSansromanbold20" tools:text="@string/lbl_mission"/>
+                    <TextView android:id="@+id/txtToInstantlyAc"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{aboutUsVM.aboutUsModel.txtToInstantlyAc}"
+                        style="@style/txtOpenSansromanregular15" tools:text="@string/msg_to_instantly_ac"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup139"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylebluegray_901">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtVision"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{aboutUsVM.aboutUsModel.txtVision}"
+                        style="@style/txtOpenSansromanbold20" tools:text="@string/lbl_vision"/>
+                    <TextView android:id="@+id/txtWeSeeAWorld"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{aboutUsVM.aboutUsModel.txtWeSeeAWorld}"
+                        style="@style/txtOpenSansromanregular15" tools:text="@string/msg_we_see_a_world"/>
+                    <View android:background="@color/bluegray_900"
+                        android:id="@+id/viewRectangle26"
+                        android:layout_height="@dimen/_11pxv"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_390pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUp1RowModel" type="com.application.app.modules.signup.data.model.SignUp1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup970"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageUnlock1"
+                android:layout_height="@dimen/_34pxh"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_width="@dimen/_34pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_unlock1"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_134pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_weight="0.74" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{signUp1RowModel.txtPassword}"
+                style="@style/txtOpenSansromanregular20_2" tools:text="@string/lbl_password"/>
+        </LinearLayout>
+        <View android:background="@color/cyan_50"
+            android:id="@+id/lineLine3"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_279pxh"/>
+    </LinearLayout>
+</layout>

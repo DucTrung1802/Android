@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="monthlyWeather1RowModel" type="com.application.app.modules.monthlyweather.data.model.MonthlyWeather1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txt38"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt38}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_30"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt41"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt41}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_31"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt42"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt42}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_30"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt43"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt43}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_322"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt44"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt44}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_34"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt45"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt45}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_35"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt46"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_weight="0.14" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{monthlyWeather1RowModel.txt46}"
+            style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_30"/>
+    </LinearLayout>
+</layout>

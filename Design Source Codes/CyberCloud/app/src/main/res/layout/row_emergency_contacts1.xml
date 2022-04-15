@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="emergencyContacts1RowModel" type="com.application.app.modules.emergencycontacts.data.model.EmergencyContacts1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_2">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup318"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_29pxv"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_weight="0.6" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNDRRMC"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{emergencyContacts1RowModel.txtNDRRMC}"
+                style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_ndrrmc"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt03212345678"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{emergencyContacts1RowModel.txt03212345678}"
+                style="@style/txtOpenSansromanregular16" tools:text="@string/lbl_032_1234_5678"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGroup338"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_89pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_weight="0.4" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageLetter2"
+                android:layout_height="@dimen/_35pxh"
+                android:layout_width="@dimen/_35pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_letter2"/>
+            <ImageView android:id="@+id/imageTelephone2"
+                android:layout_height="@dimen/_35pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_width="@dimen/_35pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_telephone2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="evacuationAreas2RowModel" type="com.application.app.modules.evacuationareas.data.model.EvacuationAreas2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:id="@+id/txtLabangonEleme"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:text="@{evacuationAreas2RowModel.txtLabangonEleme}"
+            style="@style/txtOpenSansromanregular18_3" tools:text="@string/msg_labangon_eleme"/>
+        <TextView android:id="@+id/txtElementaryScho"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:text="@{evacuationAreas2RowModel.txtElementaryScho}"
+            style="@style/txtOpenSansromanregular12_2" tools:text="@string/msg_elementary_scho"/>
+        <ImageView android:id="@+id/imageLABNAGON1"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_97pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_120pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_labnagon1}" tools:src="@drawable/img_labnagon1"/>
+    </FrameLayout>
+</layout>
