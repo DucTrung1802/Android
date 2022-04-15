@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="groupStylebluegray_600_20">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_600_19</item>
+    </style>
+    <style name="txtOpenSansromanregular36" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_36pxh</item>
+    </style>
+    <style name="groupStylecornerRadius">
+        <item name="android:background">@drawable/rectangle_border_cyan_50_radius_31</item>
+    </style>
+    <style name="txtOpenSansromanbold64" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_64pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular32" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_32pxh</item>
+    </style>
+    <style name="groupStylebluegray_600_19">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_600_19_border_black_900_47</item>
+    </style>
+    <style name="txtOpenSansromanregular15_3" parent="txtOpenSansromanregular18">
+        <item name="android:textSize">@dimen/_15pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular15_4" parent="txtOpenSansromanregular15">
+        <item name="android:textColor">@color/black_900</item>
+    </style>
+    <style name="txtOpenSansromanregular15_1" parent="txtOpenSansromanbold15">
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular15_2" parent="txtOpenSansromanregular15">
+        <item name="android:textColor">@color/teal_A400</item>
+    </style>
+    <style name="groupStyleblack_900_59">
+        <item name="android:background">@drawable/rectangle_bg_black_900_59</item>
+    </style>
+    <style name="groupStylewhite_A700">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="txtOpenSansromanregular24" parent="txtOpenSansromanregular24_1">
+        <item name="android:textColor">@color/cyan_50</item>
+    </style>
+    <style name="etOpenSansromanregular20" parent="etOpenSansromanregular20_1">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+    <style name="txtOpenSansromanregular20" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_20pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold9" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_9pxh</item>
+    </style>
+    <style name="txtSolidRoundedOutline" parent="txtOpenSansromanregular12_1">
+        <item name="android:textColor">@color/black_900_7f</item>
+        <item name="android:background">@drawable/rectangle_bg_cyan_50_border_teal_a400_radius_10</item>
+    </style>
+    <style name="groupStylebluegray_1">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_21</item>
+    </style>
+    <style name="groupStylebluegray_3">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_18_5</item>
+    </style>
+    <style name="groupStylebluegray_2">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_20</item>
+    </style>
+    <style name="groupStylebluegray_5">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_10</item>
+    </style>
+    <style name="groupStylebluegray_4">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_border_cyan_50_radius_25</item>
+    </style>
+    <style name="groupStylebluegray_6">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_15</item>
+    </style>
+    <style name="txtOpenSansromanregular11" parent="txtOpenSansromanbold11">
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular12" parent="txtOpenSansromanregular12_1">
+        <item name="android:textColor">@color/bluegray_900</item>
+    </style>
+    <style name="txtOpenSansromanregular13" parent="txtOpenSansromanregular16_4">
+        <item name="android:textSize">@dimen/_13pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular14" parent="txtOpenSansromanregular24_1">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/cyan_50_e5</item>
+    </style>
+    <style name="btnSolidOutline" parent="btnSolid">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901_border_cyan_50</item>
+    </style>
+    <style name="txtOpenSansromanregular10" parent="txtOpenSansromanregular24_1">
+        <item name="android:textSize">@dimen/_10pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+    </style>
+    <style name="txtOpenSansromanregular16_4" parent="txtOpenSansromanregular16_1">
+        <item name="android:textColor">@color/teal_A400</item>
+    </style>
+    <style name="txtOpenSansromanregular16_2" parent="txtOpenSansromanregular18_5">
+        <item name="android:textSize">@dimen/_16pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular16_3" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular15" parent="txtOpenSansromanbold15_1">
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular16" parent="txtOpenSansromanregular16_1">
+        <item name="android:textColor">@color/cyan_50_bf</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular16_1" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_16pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular12_2" parent="txtOpenSansromanregular12_1">
+        <item name="android:textColor">@color/white_A700</item>
+    </style>
+    <style name="txtOpenSansromanregular17" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_17pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular18" parent="txtOpenSansromanregular18_5">
+        <item name="android:textColor">@color/black_900_7f</item>
+    </style>
+    <style name="txtOpenSansromanbold25_1" parent="txtOpenSansromanbold20">
+        <item name="android:textSize">@dimen/_25pxh</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStyleteal_A400_33cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_teal_a400_33_border_teal_a400_radius_181_5</item>
+    </style>
+    <style name="txtOpenSansromanbold18" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_18pxh</item>
+        <item name="android:textColor">@color/cyan_50_b2</item>
+    </style>
+    <style name="txtOpenSansromanbold15" parent="txtOpenSansromanbold15_1">
+        <item name="android:textColor">@color/white_A700</item>
+    </style>
+    <style name="txtOpenSansromanbold16" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/bluegray_900</item>
+    </style>
+    <style name="groupStylebluegray_900cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900_radius_45</item>
+    </style>
+    <style name="txtOpenSansromanregular12_1" parent="txtOpenSansromanregular24_1">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+    </style>
+    <style name="txtOpenSansromanbold11" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_11pxh</item>
+    </style>
+    <style name="groupStylewhite_A700cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_radius_30</item>
+    </style>
+    <style name="txtOpenSansromanregular24_1" parent="txtOpenSansromanregular16_3">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/bluegray_800</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+    <style name="txtOpenSansromanbold32_1" parent="txtOpenSansromanbold32">
+        <item name="android:textColor">@color/bluegray_800</item>
+    </style>
+    <style name="txtOpenSansromanbold25" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_25pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold28" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_28pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular20_3" parent="txtOpenSansromanregular20">
+        <item name="android:textColor">@color/white_A700_7f</item>
+    </style>
+    <style name="txtOpenSansromanregular20_1" parent="txtOpenSansromanregular18_4">
+        <item name="android:textSize">@dimen/_20pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold23" parent="txtOpenSansromanbold23_1">
+        <item name="android:textColor">@color/bluegray_901</item>
+    </style>
+    <style name="txtOpenSansromanregular20_2" parent="txtOpenSansromanregular12_2">
+        <item name="android:textSize">@dimen/_20pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold24" parent="txtOpenSansromanbold18">
+        <item name="android:textSize">@dimen/_24pxh</item>
+    </style>
+    <style name="btnSolidRounded_1" parent="btnSolid">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/bluegray_901</item>
+        <item name="android:background">@drawable/rectangle_bg_teal_a400_radius_20</item>
+    </style>
+    <style name="txtOpenSansromanbold20" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/teal_A400</item>
+    </style>
+    <style name="txtOpenSansromanregular13_1" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_13pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold20_1" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_20pxh</item>
+    </style>
+    <style name="groupStylebluegray_903">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901</item>
+    </style>
+    <style name="groupStylebluegray_904">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_902</item>
+    </style>
+    <style name="groupStylebluegray_905">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901_border_cyan_50</item>
+    </style>
+    <style name="txtOpenSansromanbold20_2" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_20pxh</item>
+    </style>
+    <style name="groupStylebluegray_900">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900</item>
+    </style>
+    <style name="btnSolidRoundedOutline" parent="btnSolidOutline">
+        <item name="android:textSize">@dimen/_15pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901_border_teal_a400_radius_15</item>
+    </style>
+    <style name="groupStylebluegray_901">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_900</item>
+    </style>
+    <style name="groupStylebluegray_902">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901</item>
+    </style>
+    <style name="etSolidRounded" parent="etOpenSansromanregular20">
+        <item name="android:textSize">@dimen/_18pxh</item>
+        <item name="android:textColor">@color/black_900_7f</item>
+        <item name="android:background">@drawable/rectangle_bg_cyan_50_radius_10</item>
+    </style>
+    <style name="etOpenSansromanregular20_1" parent="etOpenSansromanbold20">
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="btnSolidRounded" parent="btnSolidRoundedOutline">
+        <item name="android:textColor">@color/cyan_900</item>
+        <item name="android:background">@drawable/rectangle_bg_teal_a400_radius_15</item>
+    </style>
+    <style name="groupStyleteal_A400cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_teal_a400_radius_15</item>
+    </style>
+    <style name="txtOpenSansromanbold32">
+        <item name="android:textSize">@dimen/_32pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStylewhite_1">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="txtOpenSansromanbold30" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_30pxh</item>
+    </style>
+    <style name="btnSolid">
+        <item name="android:textSize">@dimen/_25pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_bg_bluegray_600_19</item>
+    </style>
+    <style name="btnSolid_3" parent="btnSolid_4">
+        <item name="android:background">@drawable/rectangle_bg_yellow_800</item>
+    </style>
+    <style name="btnSolid_2" parent="btnSolid_4">
+        <item name="android:background">@drawable/rectangle_bg_yellow_a700</item>
+    </style>
+    <style name="btnSolid_1" parent="btnSolid">
+        <item name="android:textSize">@dimen/_15pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:background">@drawable/rectangle_bg_teal_400</item>
+    </style>
+    <style name="groupStylecyan_50cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_cyan_50_radius_10</item>
+    </style>
+    <style name="btnSolid_4" parent="btnSolid_1">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_bg_red_600</item>
+    </style>
+    <style name="btnSolidRoundedOutline_1" parent="btnSolidRoundedOutline">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_901_border_teal_a400_radius_10</item>
+    </style>
+    <style name="txtOpenSansromanbold48" parent="txtOpenSansromanbold18">
+        <item name="android:textSize">@dimen/_48pxh</item>
+    </style>
+    <style name="txtOpenSansromanregular18_2" parent="txtOpenSansromanregular18_5">
+        <item name="android:textColor">@color/bluegray_900</item>
+    </style>
+    <style name="txtOpenSansromanregular18_3" parent="txtOpenSansromanregular18_5">
+        <item name="android:textColor">@color/white_A700</item>
+    </style>
+    <style name="txtOpenSansromanregular18_1" parent="txtOpenSansromanregular12_1">
+        <item name="android:textSize">@dimen/_18pxh</item>
+    </style>
+    <style name="txtOpenSansromanbold23_1" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_23pxh</item>
+    </style>
+    <style name="txtregular20">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular18_4" parent="txtOpenSansromanregular18_5">
+        <item name="android:textColor">@color/cyan_50_7f</item>
+    </style>
+    <style name="etOpenSansromanbold20">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtOpenSansromanregular18_5" parent="txtOpenSansromanbold18">
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtregular16">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/bluegray_400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtOpenSansromanregular10_1" parent="txtOpenSansromanregular10">
+        <item name="android:textColor">@color/bluegray_901</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="groupStyleteal_A400_bf">
+        <item name="android:background">@drawable/rectangle_bg_teal_a400_bf_border_white_a700</item>
+    </style>
+    <style name="txtOpenSansromanbold52" parent="txtOpenSansromanbold15_1">
+        <item name="android:textSize">@dimen/_52pxh</item>
+    </style>
+    <style name="groupStyleblue_800cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_blue_800_radius_10</item>
+    </style>
+    <style name="txtOpenSansromanbold15_1" parent="txtOpenSansromanbold32_1">
+        <item name="android:textSize">@dimen/_15pxh</item>
+        <item name="android:textColor">@color/cyan_50</item>
+    </style>
+</resources>

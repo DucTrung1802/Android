@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="monthlyWeatherVM" type="com.application.app.modules.monthlyweather.data.viewmodel.MonthlyWeatherVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearGroup882"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearRectangle15"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_600_20">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearGroup781"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_26pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_31pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_menu_1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtWeather"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_39pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtWeather}"
+                        style="@style/txtOpenSansromanbold28" tools:text="@string/lbl_weather"/>
+                    <ImageView android:id="@+id/imageSearch"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_search_1"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup861"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup866"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:id="@+id/linearGroup867"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtMarch"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_23pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_weight="0.36"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtMarch}"
+                            style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_march"/>
+                        <FrameLayout android:id="@+id/frameGroup869"
+                            android:layout_height="@dimen/_24pxv"
+                            android:layout_marginEnd="@dimen/_23pxh"
+                            android:layout_marginStart="@dimen/_124pxh" android:layout_width="@dimen/_140pxh">
+                            <FrameLayout android:id="@+id/frameGroup871"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_24pxv" android:layout_width="@dimen/_140pxh">
+                                <ImageView android:id="@+id/imageSignin"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_24pxh"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="@dimen/_85pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_signin_2"/>
+                                <ImageView
+                                    android:id="@+id/imageSignin1"
+                                    android:layout_gravity="end"
+                                    android:layout_height="@dimen/_24pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_width="@dimen/_78pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_signin_3"/>
+                            </FrameLayout>
+                            <LinearLayout
+                                android:id="@+id/linearGroup783"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_4pxv"
+                                android:layout_marginEnd="@dimen/_11pxh"
+                                android:layout_marginStart="@dimen/_11pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:clickable="true"
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtBYDAY"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_2pxv"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.42"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtBYDAY}"
+                                    style="@style/txtOpenSansromanregular10" tools:text="@string/lbl_by_day"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtBYMONTH"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_17pxh"
+                                    android:layout_weight="0.58"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtBYMONTH}"
+                                    style="@style/txtOpenSansromanregular10_1" tools:text="@string/lbl_by_month"/>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameGroup873"
+                        android:layout_height="@dimen/_273pxv"
+                        android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+                        <FrameLayout android:id="@+id/frameGroup877"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_24pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_28pxh"
+                            android:layout_marginStart="@dimen/_28pxh"
+                            android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_69pxh">
+                            <ImageView android:id="@+id/imageThemedark"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_24pxh"
+                                android:layout_width="@dimen/_69pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_themedark_3"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtHistory"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_7pxv"
+                                android:layout_marginEnd="@dimen/_15pxh"
+                                android:layout_marginStart="@dimen/_14pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtHistory}"
+                                style="@style/txtOpenSansromanregular11" tools:text="@string/lbl_history"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/frameGroup875"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_273pxv" android:layout_width="match_parent">
+                            <LinearLayout
+                                android:id="@+id/linearGroup812"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_48pxv"
+                                android:layout_marginTop="@dimen/_48pxv"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <LinearLayout
+                                    android:id="@+id/linearGroup811"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtS"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_30pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtS}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_s"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtM"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_35pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtM}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_m"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtT"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_36pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtT}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_t"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtW"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_37pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtW}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_w"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtT1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_36pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtT1}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_t"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtF"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_36pxh"
+                                    android:layout_weight="0.1"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtF}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_f"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtS1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginEnd="@dimen/_31pxh"
+                                    android:layout_marginStart="@dimen/_36pxh"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txtS1}"
+                                    style="@style/txtOpenSansromanbold20_1" tools:text="@string/lbl_s"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/cyan_50"
+                                    android:id="@+id/lineLine5"
+                                    android:layout_height="@dimen/_1pxv"
+                                    android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_390pxh"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/linearGroup806"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <View
+                                    android:background="@drawable/rectangle_bg_cyan_50_7f_radius_5"
+                                    android:id="@+id/viewRectangle56"
+                                    android:layout_height="@dimen/_52pxh"
+                                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_6pxh"/>
+                                <LinearLayout
+                                    android:id="@+id/linearGroup800"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_55pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt27"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_24pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt27}"
+                                    style="@style/txtOpenSansromanregular18_4" tools:text="@string/lbl_273"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt28"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_22pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt28}"
+                                    style="@style/txtOpenSansromanregular18_4" tools:text="@string/lbl_28"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_22pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt1}"
+                                    style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_1"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_25pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt2}"
+                                    style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_2"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt3"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_23pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt3}"
+                                    style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_3"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt4"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_19pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt4}"
+                                    style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_4"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_24pxh"
+                                    android:layout_marginStart="@dimen/_21pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{monthlyWeatherVM.monthlyWeatherModel.txt5}"
+                                    style="@style/txtOpenSansromanregular18_1" tools:text="@string/lbl_5"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/linearGroup801"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_24pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <ImageView android:id="@+id/imageH1"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_21pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_h1"/>
+                                    <ImageView
+                                    android:id="@+id/imageRain11"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_17pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rain11"/>
+                                    <ImageView
+                                    android:id="@+id/imageRain1"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_17pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rain1"/>
+                                    <ImageView
+                                    android:id="@+id/imageCloudyday1"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_20pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_cloudyday1"/>
+                                    <ImageView
+                                    android:id="@+id/imageCloudy11"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_cloudy11"/>
+                                    <ImageView
+                                    android:id="@+id/imageS11"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginStart="@dimen/_14pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_s11"/>
+                                    <ImageView
+                                    android:id="@+id/imageCloudyday2"
+                                    android:layout_height="@dimen/_35pxh"
+                                    android:layout_marginEnd="@dimen/_22pxh"
+                                    android:layout_marginStart="@dimen/_16pxh"
+                                    android:layout_width="@dimen/_35pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_cloudyday1"/>
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/recyclerGroup880"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_23pxv"
+                                    android:layout_marginEnd="@dimen/_22pxh"
+                                    android:layout_marginStart="@dimen/_22pxh"
+                                    android:layout_marginTop="@dimen/_18pxv"
+                                    android:layout_width="match_parent"
+                                    android:nestedScrollingEnabled="false"
+                                    android:orientation="vertical"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    itemSpace="@{@dimen/_9pxh}"
+                                    tools:itemCount="2" tools:listitem="@layout/row_monthly_weather1"/>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerGroup879"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_30pxh}" tools:itemCount="2" tools:listitem="@layout/row_monthly_weather2"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearRectangle3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_904">
+            <LinearLayout android:id="@+id/linearGroup878"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_52pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageHut1"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_22pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_hut1"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageCalendar11"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_calendar11"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageWaterlevel"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_width="@dimen/_45pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_floods21"/>
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageRadar"
+                    android:layout_height="@dimen/_39pxh"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_39pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_radar"/>
+                <ImageView android:id="@+id/imageEmergencycall"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_emergencycall_1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

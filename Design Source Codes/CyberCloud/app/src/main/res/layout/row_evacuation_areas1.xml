@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="evacuationAreas1RowModel" type="com.application.app.modules.evacuationareas.data.model.EvacuationAreas1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup375"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_weight="0.62" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup369"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_cyan_50_7f_radius_5"
+                    android:id="@+id/viewRectangle56"
+                    android:layout_height="@dimen/_52pxh"
+                    android:layout_marginBottom="@dimen/_2pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtTisaBarangayH"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_weight="0.97"
+                    android:layout_width="0dp"
+                    android:text="@{evacuationAreas1RowModel.txtTisaBarangayH}"
+                    style="@style/txtOpenSansromanregular18_3" tools:text="@string/msg_tisa_barangay_h"/>
+            </LinearLayout>
+            <TextView android:gravity="end"
+                android:id="@+id/txtDistrictGovern"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:text="@{evacuationAreas1RowModel.txtDistrictGovern}"
+                style="@style/txtOpenSansromanregular12_2" tools:text="@string/msg_district_govern"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageTisaaa1"
+            android:layout_height="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_width="@dimen/_121pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_tisaaa1}" tools:src="@drawable/img_tisaaa1"/>
+    </LinearLayout>
+</layout>

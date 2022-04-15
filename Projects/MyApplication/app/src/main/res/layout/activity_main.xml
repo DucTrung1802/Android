@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Button 1"-->
+    <!--        app:layout_constainLeft_toLeftOf="parent"-->
+    <!--        app:layout_constrainRight_toRightOf="parent"-->
+    <!--        tools:ignore="MissingConstraints"></Button>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Text 1"></TextView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_toRightOf="@id/tv1"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="Text 2"></TextView>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_toRightOf="@id/tv2"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="Text 3"></TextView>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="Text 4"></TextView>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="visible">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:="center"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Text 1"></TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center_horizontal|right|bottom"-->
+<!--            android:text="Text 2"></TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Text 3"></TextView>-->
+<!--    </LinearLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv1"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Text 1"></TextView>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignBottom="@id/tv1"-->
+    <!--            android:layout_marginBottom="-119dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Text 2"></TextView>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv3"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignBottom="@id/tv2"-->
+    <!--            android:layout_marginBottom="-119dp"-->
+    <!--            android:gravity="center_horizontal|right|"-->
+    <!--            android:text="Text 3"></TextView>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background=""></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background=""></LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

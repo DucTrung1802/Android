@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="contactUsVM" type="com.application.app.modules.contactus.data.viewmodel.ContactUsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup130"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearContactUs"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameGroup125"
+                    android:layout_height="@dimen/_90pxv" android:layout_width="match_parent">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageArrow1"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginHorizontal="@dimen/_26pxh"
+                        android:layout_marginVertical="@dimen/_26pxv"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_arrow1"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnContactUs"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_contact_us"
+                        android:textAllCaps="false"
+                        style="@style/btnSolid" tools:text="@string/lbl_contact_us"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup122"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylebluegray_900">
+                    <TextView android:id="@+id/txtNameCyberCloud"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{contactUsVM.contactUsModel.txtNameCyberCloud}"
+                        style="@style/txtOpenSansromanregular20" tools:text="@string/msg_name_cybercloud"/>
+                    <View android:background="@color/bluegray_901"
+                        android:id="@+id/lineLine11"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_390pxh"/>
+                    <TextView android:id="@+id/txtLocationNBacl"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{contactUsVM.contactUsModel.txtLocationNBacl}"
+                        style="@style/txtOpenSansromanregular20" tools:text="@string/msg_location_n_bacl"/>
+                    <View android:background="@color/bluegray_901"
+                        android:id="@+id/lineLine9"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_390pxh"/>
+                    <TextView android:id="@+id/txtEmailcyberclou"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{contactUsVM.contactUsModel.txtEmailcyberclou}"
+                        style="@style/txtOpenSansromanregular20" tools:text="@string/msg_email_cyberclou"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearGroup126"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <View android:background="@color/bluegray_901"
+                            android:id="@+id/lineLine10"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_390pxh"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtPhone0325643"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_30pxh"
+                            android:layout_marginStart="@dimen/_32pxh"
+                            android:layout_width="match_parent"
+                            android:text="@{contactUsVM.contactUsModel.txtPhone0325643}"
+                            style="@style/txtOpenSansromanregular20_1" tools:text="@string/msg_phone_032_5643"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameGroup128"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_409pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_24pxv" android:layout_width="@dimen/_365pxh">
+                    <ImageView android:id="@+id/imageRectangle27"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_409pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY" android:src="@drawable/img_rectangle27"/>
+                    <LinearLayout android:id="@+id/linearSendamessage"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_28pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_21pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtSendAMessage"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_33pxh"
+                            android:layout_marginStart="@dimen/_33pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{contactUsVM.contactUsModel.txtSendAMessage}"
+                            style="@style/txtOpenSansromanbold23" tools:text="@string/lbl_send_a_message"/>
+                        <EditText
+                            android:background="@drawable/rectangle_bg_cyan_50_radius_10"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_your_name"
+                            android:id="@+id/etYourName"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_7pxv"
+                            android:paddingStart="@dimen/_20pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@={contactUsVM.contactUsModel.etYourNameValue}"
+                            android:textColorHint="@color/black_900_7f" style="@style/etSolidRounded"/>
+                        <EditText
+                            android:background="@drawable/rectangle_bg_cyan_50_radius_10"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_your_email"
+                            android:id="@+id/etYourEmail"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_6pxv"
+                            android:paddingStart="@dimen/_20pxh"
+                            android:paddingTop="@dimen/_7pxv"
+                            android:singleLine="true"
+                            android:text="@={contactUsVM.contactUsModel.etYourEmailValue}"
+                            android:textColorHint="@color/black_900_7f" style="@style/etSolidRounded"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearRectangle30"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecyan_50cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="start"
+                                android:id="@+id/txtWriteYourMess"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_157pxv"
+                                android:layout_marginEnd="@dimen/_20pxh"
+                                android:layout_marginStart="@dimen/_20pxh"
+                                android:layout_marginTop="@dimen/_12pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{contactUsVM.contactUsModel.txtWriteYourMess}"
+                                style="@style/txtOpenSansromanregular18" tools:text="@string/msg_write_your_mess"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

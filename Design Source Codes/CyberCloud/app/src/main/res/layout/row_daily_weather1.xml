@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dailyWeather1RowModel" type="com.application.app.modules.dailyweather.data.model.DailyWeather1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <View
+            android:background="@drawable/rectangle_bg_cyan_50_7f_radius_5"
+            android:id="@+id/viewRectangle56"
+            android:layout_height="@dimen/_52pxh"
+            android:layout_marginBottom="@dimen/_118pxv" android:layout_width="@dimen/_6pxh"/>
+        <LinearLayout android:id="@+id/linearGroup890"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_weight="0.98" android:layout_width="0dp"
+            android:orientation="horizontal" style="@style/groupStylebluegray_5">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup888"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_weight="0.38" android:layout_width="0dp" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearGroup887"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt27"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{dailyWeather1RowModel.txt27}"
+                        style="@style/txtOpenSansromanbold64" tools:text="@string/lbl_273"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.17"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{dailyWeather1RowModel.txt}"
+                        style="@style/txtOpenSansromanregular32" tools:text="@string/lbl"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCloudy"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{dailyWeather1RowModel.txtCloudy}"
+                    style="@style/txtOpenSansromanregular16_1" tools:text="@string/lbl_cloudy"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCebuCity"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{dailyWeather1RowModel.txtCebuCity}"
+                    style="@style/txtOpenSansromanregular16_1" tools:text="@string/lbl_cebu_city"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageCloud"
+                android:layout_height="@dimen/_81pxh"
+                android:layout_marginBottom="@dimen/_23pxv"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="@dimen/_81pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_cloud_1}" tools:src="@drawable/img_cloud_1"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearGroup889"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_weight="0.3" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:gravity="start" android:id="@+id/txt30"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{dailyWeather1RowModel.txt30}"
+                    style="@style/txtOpenSansromanbold48" tools:text="@string/lbl_302"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtMON"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{dailyWeather1RowModel.txtMON}"
+                    style="@style/txtOpenSansromanbold24" tools:text="@string/lbl_mon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

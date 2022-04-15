@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="evacuationAreasVM" type="com.application.app.modules.evacuationareas.data.viewmodel.EvacuationAreasVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup418"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageAsdasdasasdasda"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_884pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_asdasdasasdasda}" tools:src="@drawable/img_asdasdasasdasda"/>
+        <LinearLayout android:id="@+id/linearGroup417"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup368"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:clickable="true"
+                        android:id="@+id/imageArrow1"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_arrow1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEvacuationArea"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{evacuationAreasVM.evacuationAreasModel.txtEvacuationArea}"
+                        style="@style/txtOpenSansromanbold25" tools:text="@string/msg_evacuation_area"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.core.widget.NestedScrollView
+                android:clipToPadding="false"
+                android:fillViewport="true"
+                android:id="@+id/scrollViewScrollview"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameGroup400"
+                    android:layout_height="@dimen/_829pxv" android:layout_width="@dimen/_351pxh">
+                    <LinearLayout android:clickable="true"
+                        android:id="@+id/linearGroup395"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_38pxv"
+                        android:layout_marginTop="@dimen/_38pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStyleteal_A400_bf">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearGroup394"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_18pxv"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:clickable="true"
+                                android:id="@+id/txtLabangonBarang"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_width="match_parent"
+                                android:text="@{evacuationAreasVM.evacuationAreasModel.txtLabangonBarang}"
+                                style="@style/txtOpenSansromanregular18_2" tools:text="@string/msg_labangon_barang"/>
+                            <TextView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtDistrictGovern"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_7pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="match_parent"
+                                android:text="@{evacuationAreasVM.evacuationAreasModel.txtDistrictGovern}"
+                                style="@style/txtOpenSansromanregular12" tools:text="@string/msg_district_govern"/>
+                        </LinearLayout>
+                        <ImageView android:clickable="true"
+                            android:id="@+id/imageLabangon1"
+                            android:layout_height="@dimen/_94pxh"
+                            android:layout_marginBottom="@dimen/_11pxv"
+                            android:layout_marginEnd="@dimen/_6pxh"
+                            android:layout_marginStart="@dimen/_27pxh"
+                            android:layout_marginTop="@dimen/_9pxv"
+                            android:layout_width="@dimen/_121pxh"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_labangon1_1}" tools:src="@drawable/img_labangon1_1"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearGroup386"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylebluegray_903">
+                        <TextView android:ellipsize="end"
+                            android:gravity="end"
+                            android:id="@+id/txtEvacuationArea1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_40pxh"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{evacuationAreasVM.evacuationAreasModel.txtEvacuationArea1}"
+                            style="@style/txtOpenSansromanregular12_1" tools:text="@string/msg_evacuation_area2"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="start"
+                            android:id="@+id/recyclerGroup412"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_151pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_18pxh}"
+                            tools:itemCount="2" tools:listitem="@layout/row_evacuation_areas1"/>
+                        <FrameLayout android:id="@+id/frameGroup406"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_98pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_328pxh">
+                            <TextView android:id="@+id/txtCITUniversit"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_width="match_parent"
+                                android:text="@{evacuationAreasVM.evacuationAreasModel.txtCITUniversit}"
+                                style="@style/txtOpenSansromanregular18_3" tools:text="@string/msg_cit_universit"/>
+                            <TextView
+                                android:id="@+id/txtPrivateUnivers"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_23pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_23pxv"
+                                android:layout_width="wrap_content"
+                                android:text="@{evacuationAreasVM.evacuationAreasModel.txtPrivateUnivers}"
+                                style="@style/txtOpenSansromanregular12_2" tools:text="@string/msg_private_univers"/>
+                            <ImageView android:id="@+id/imageCit1"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_98pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_width="@dimen/_121pxh"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_cit1}" tools:src="@drawable/img_cit1"/>
+                        </FrameLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="start"
+                            android:id="@+id/recyclerGroup413"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="2" tools:listitem="@layout/row_evacuation_areas2"/>
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtLabangonBaske"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_20pxh"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{evacuationAreasVM.evacuationAreasModel.txtLabangonBaske}"
+                            style="@style/txtOpenSansromanregular18_3" tools:text="@string/msg_labangon_baske"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageLABNAGON2"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="@dimen/_97pxh"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_120pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_labnagon1}" tools:src="@drawable/img_labnagon1"/>
+                </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settings1VM" type="com.application.app.modules.settings1.data.viewmodel.Settings1VM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSettings"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup1322"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearRectangle4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_600_19">
+                <androidx.appcompat.widget.Toolbar
+                    android:gravity="start"
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent" app:contentInsetStart="0dp">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearGroup1308"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_69pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageArrow1"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="@dimen/_32pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_arrow1"/>
+                        <TextView android:id="@+id/txtSettings"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_weight="0.89"
+                            android:layout_width="0dp"
+                            android:text="@{settings1VM.settings1Model.txtSettings}"
+                            style="@style/txtOpenSansromanbold25" tools:text="@string/lbl_settings"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearGroup1317"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearGroup1324"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_38pxh"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <ImageView android:gravity="start"
+                        android:id="@+id/imageTheme"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY" android:src="@drawable/img_theme"/>
+                    <FrameLayout android:id="@+id/frameGroup1329"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_30pxv"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_88pxh">
+                        <FrameLayout android:id="@+id/frameGroup1331"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                            <ImageView
+                                android:id="@+id/imageRectangle20"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_30pxh"
+                                android:layout_width="@dimen/_88pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_rectangle20"/>
+                            <FrameLayout
+                                android:id="@+id/frameGroup1333"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                <FrameLayout
+                                    android:id="@+id/frameGroup1343"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                    <ImageView
+                                    android:id="@+id/imageRectangle20S"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20s"/>
+                                    <LinearLayout
+                                    android:id="@+id/linearGroup1310"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_6pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageNewmoon1"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_19pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_newmoon1"/>
+                                    <ImageView
+                                    android:id="@+id/imageDark"
+                                    android:layout_height="@dimen/_10pxh"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="@dimen/_29pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_dark"/>
+                                    </LinearLayout>
+                                </FrameLayout>
+                                <FrameLayout
+                                    android:id="@+id/frameGroup1335"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                    <ImageView
+                                    android:id="@+id/imageRectangle21"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20"/>
+                                    <FrameLayout
+                                    android:id="@+id/frameGroup1337"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                    <FrameLayout
+                                    android:id="@+id/frameGroup1341"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                    <ImageView
+                                    android:id="@+id/imageRectangle20S1"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20s"/>
+                                    <LinearLayout
+                                    android:id="@+id/linearGroup1309"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_6pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageNewmoon2"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_19pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_newmoon1"/>
+                                    <ImageView
+                                    android:id="@+id/imageDark1"
+                                    android:layout_height="@dimen/_10pxh"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="@dimen/_29pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_dark"/>
+                                    </LinearLayout>
+                                    </FrameLayout>
+                                    <FrameLayout
+                                    android:id="@+id/frameGroup1339"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                    <ImageView
+                                    android:id="@+id/imageRectangle22"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20"/>
+                                    <ImageView
+                                    android:id="@+id/imageRectangle20S2"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20s"/>
+                                    </FrameLayout>
+                                    </FrameLayout>
+                                </FrameLayout>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout android:id="@+id/linearGroup1311"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageNewmoon3"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_width="@dimen/_19pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_newmoon1"/>
+                            <ImageView android:id="@+id/imageDark2"
+                                android:layout_height="@dimen/_10pxh"
+                                android:layout_marginBottom="@dimen/_4pxv"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="@dimen/_29pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_dark"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageRectangle56"
+                    android:layout_height="@dimen/_52pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_252pxh"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_rectangle56"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageTimeformat"
+                android:layout_height="@dimen/_107pxh"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="@dimen/_286pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_timeformat"/>
+            <ImageView android:id="@+id/imageWindspeed"
+                android:layout_height="@dimen/_62pxh"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="@dimen/_285pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_windspeed"/>
+            <ImageView android:id="@+id/imagePressure"
+                android:layout_height="@dimen/_55pxh"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="@dimen/_287pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_pressure"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearGroup1316"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_54pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameGroup1345"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_70pxv"
+                    android:layout_marginStart="@dimen/_3pxh" android:layout_width="@dimen/_387pxh">
+                    <ImageView android:id="@+id/imageRectangle23"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_70pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY" android:src="@drawable/img_rectangle22_3"/>
+                    <LinearLayout android:id="@+id/linearGroup1312"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageDailyNotificat"
+                            android:layout_height="@dimen/_22pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="@dimen/_207pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_dailynotificat"/>
+                        <FrameLayout android:id="@+id/frameGroup1347"
+                            android:layout_height="@dimen/_30pxv"
+                            android:layout_marginStart="@dimen/_17pxh" android:layout_width="@dimen/_88pxh">
+                            <FrameLayout
+                                android:id="@+id/frameGroup1349"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_88pxh">
+                                <ImageView
+                                    android:id="@+id/imageRectangle24"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20_1"/>
+                                <ImageView
+                                    android:id="@+id/imageRectangle20S3"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_30pxh"
+                                    android:layout_width="@dimen/_88pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_rectangle20s_1"/>
+                            </FrameLayout>
+                            <ImageView android:id="@+id/imageNewmoon4"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_marginBottom="@dimen/_5pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_8pxh"
+                                android:layout_marginTop="@dimen/_6pxv"
+                                android:layout_width="@dimen/_19pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_newmoon1"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameGroup1351"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_147pxv"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_386pxh">
+                    <FrameLayout android:id="@+id/frameGroup1353"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_147pxv" android:layout_width="@dimen/_386pxh">
+                        <ImageView android:id="@+id/imageRectangle25"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_70pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY" android:src="@drawable/img_rectangle23_3"/>
+                        <ImageView android:id="@+id/imageRectangle26"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_70pxv"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY" android:src="@drawable/img_rectangle24_2"/>
+                        <ImageView android:id="@+id/imageEllipse6"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_95pxh"
+                            android:layout_marginBottom="@dimen/_22pxv"
+                            android:layout_marginEnd="@dimen/_48pxh"
+                            android:layout_marginStart="@dimen/_48pxh"
+                            android:layout_marginTop="@dimen/_22pxv"
+                            android:layout_width="@dimen/_22pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_ellipse6"/>
+                    </FrameLayout>
+                    <LinearLayout android:id="@+id/linearGroup1327"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout android:id="@+id/linearGroup1313"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageSeverAlerts"
+                                android:layout_height="@dimen/_16pxh"
+                                android:layout_marginBottom="@dimen/_9pxv"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="@dimen/_141pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_severalerts"/>
+                            <ImageView android:id="@+id/imageThemedark"
+                                android:layout_height="@dimen/_30pxh"
+                                android:layout_marginStart="@dimen/_82pxh"
+                                android:layout_width="@dimen/_88pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_themedark_1"/>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearGroup1314"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_47pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageRainAlarm"
+                                android:layout_height="@dimen/_16pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="@dimen/_127pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_rainalarm"/>
+                            <ImageView android:id="@+id/imageThemedark1"
+                                android:layout_height="@dimen/_30pxh"
+                                android:layout_marginStart="@dimen/_95pxh"
+                                android:layout_width="@dimen/_88pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_themedark_1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
