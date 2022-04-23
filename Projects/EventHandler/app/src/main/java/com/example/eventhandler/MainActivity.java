@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
     // Bước 1: Khai báo biến đối tượng muốn xử lý logic
     // Bước 2: Mapping đối tượng vừa khai báo đến thằng thư mục layout thông qua method findViewById()
     // Bước 3:
-    EditText edtName;
+    EditText edtNumberA;
+    EditText edtNumberB;
+    EditText edtNumberC;
     EditText edtAge;
     Button btnShow;
 
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        edtName = findViewById(R.id.edt_name);
+        edtNumberA = findViewById(R.id.edt_A);
         edtAge = findViewById(R.id.edt_age);
         btnShow = findViewById(R.id.btn_show);
 
