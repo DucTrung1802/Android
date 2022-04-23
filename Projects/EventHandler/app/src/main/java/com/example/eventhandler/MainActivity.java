@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
                 numberArray.add(numberB);
                 numberArray.add(numberC);
 
-                tvSum.setText(String.valueOf(calculateSum(numberA, numberB, numberC)));
-                tvMax.setText(String.valueOf(maxValue(numberArray)));
-                tvMax.setText(String.valueOf(minValue(numberArray)));
+                tvSum.setText("Sum: " + String.valueOf(calculateSum(numberA, numberB, numberC)));
+                tvMax.setText("Max: " + String.valueOf(maxValue(numberArray)));
+                tvMin.setText("Min: " + String.valueOf(minValue(numberArray)));
             }
         });
     }
